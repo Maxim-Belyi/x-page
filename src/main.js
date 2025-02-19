@@ -1,5 +1,5 @@
 
-      import Swiper from 'https://unpkg.com/swiper@11/swiper-bundle.esm.browser.min.js';
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css';
 // import Swiper from "swiper";
 
 
