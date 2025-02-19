@@ -1,5 +1,5 @@
 
-      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css';
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 // import Swiper from "swiper";
 
 
