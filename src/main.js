@@ -1,5 +1,6 @@
-
-import Swiper from "swiper";
+<script type="module">
+      import Swiper from 'https://unpkg.com/swiper@11/swiper-bundle.esm.browser.min.js';
+// import Swiper from "swiper";
 
 
 
