@@ -1,0 +1,54 @@
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+body {
+  font-family: var(--font-family-title);
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+cite {
+  font-style: normal;
+}
+
+li {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+html {
+    background-color:var(--color-gray);
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  h1, .h1, h2, .h2 {
+    @include fluid-text(80, 26);
+    line-height: 1.2;
+  }
+  
+  h3, .h3 {
+    @include fluid-text(48, 20);
+    line-height: 1.2;
+  }
+  
+  h4, .h4 {
+    @include fluid-text(32, 20);
+    line-height: 1.3;
+  }
+
+ 

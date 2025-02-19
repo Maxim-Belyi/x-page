@@ -1,0 +1,119 @@
+.container {
+  max-width: var(--container-width);
+  margin: auto;
+  width: 100%;
+  padding-inline: var(--padding-x);
+
+  @include mobile {
+    padding-inline: var(--padding-x-mobile);
+  }
+}
+
+.utils {
+  border-radius: var(--border-radius);
+  background-color: var(--color-white);
+  font-family: var(--font-family-title);
+  font-weight: bold;
+}
+
+.title-link {
+  @include flex-center;
+
+  font-size: clamp(14px, 0.99vw, 20px);
+  gap: 12px;
+  line-height: 1.4;
+
+  & a {
+  padding: 10px 0px 10px 10px;
+  }
+
+  @include mobile {
+    & svg {
+      display: none;
+    }
+  }
+}
+
+.content {
+  max-width: var(--container-width);
+  padding-inline: var(--padding-x);
+  margin: auto;
+
+  @include mobile {
+    padding-inline: var(--padding-x-mobile);
+  }
+}
+
+.section {
+  @include flex-center;
+
+  width: 100%;
+  margin-top: var(--section-margin-y);
+  justify-content: space-between;
+}
+
+.section-body {
+  display: flex;
+  margin-top: clamp(21px, 2.58vw, 64px);
+}
+
+.button-alt {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: var(--border-radius);
+}
+
+.hidden-tablet {
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+.h3-paddings {
+  padding-top: clamp(12px, 1.92vw, 24px);
+  padding-left: clamp(12px, 1.92vw, 24px);
+  padding-right: 15px;
+  user-select: none;
+}
+
+.item-button {
+  @include fluid-text (12, 10);
+
+  display: flex;
+  gap: 6px;
+  line-height: 1.4;
+  padding: 6px 12px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: var(--border-radius);
+}

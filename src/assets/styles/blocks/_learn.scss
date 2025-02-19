@@ -1,0 +1,228 @@
+.learn {
+  margin-top: var(--section-margin-y);
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    padding: 0;
+    background-color: inherit;
+  }
+
+  &__title-wrapper {
+    margin-top: 0;
+    padding: clamp(0px, 1.45vw, 32px) clamp(0px, 1.45vw, 32px);
+
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  &__title-link {
+    color: var(--color-green);
+    padding-right: clamp(0px, 1vw, 32px);
+    padding-top: clamp(0px, 1vw, 49px);
+
+    &:hover {
+      color: var(--color-orange);
+    }
+  }
+
+  &__body-wrapper {
+    display: grid;
+    grid-template-columns: clamp(296px, 65.2vw, 1242px) minmax(300px, 614px);
+
+
+    @include tablet {
+      grid-template-columns: auto;
+    }
+  }
+
+  &__body-banners {
+    display: grid;
+    gap: clamp(8px, 0.8vw, 20px);
+    padding: 0 clamp(12px, 1.92vw, 16px) clamp(12px, 1.92vw, 16px) clamp(12px, 1.92vw, 32px);
+
+    @include mobile {
+      padding: 0;
+      background-color: inherit;
+    }
+  }
+
+  &__sport-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    background: url(../images/learn-background.webp) center/cover no-repeat;
+    color: var(--color-white);
+
+    @media(max-width:390px) {
+      background: url(../images/learn-background-mobile.jpg) center/cover no-repeat;
+    }
+
+    h3 {
+      max-width: 780px;
+    }
+
+    & button {
+      color: var(--color-green);
+      background-color: var(--color-white);
+      margin-left: clamp(12px, 1vw, 24px);
+      margin-bottom: clamp(12px, 1vw, 24px);
+      margin-top: clamp(220px, 19.2vw, 362px);
+
+    }
+  }
+
+  &__choose {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(68px, 1.92vw, 126px);
+    justify-content: space-between;
+    background-color: var(--color-green);
+    color: var(--color-white);
+
+    & h3 {
+      max-width: 860px;
+    }
+
+    &_button-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      max-width: 560px;
+      margin-left: clamp(12px, 1.92vw, 24px);
+      margin-bottom: clamp(12px, 1.92vw, 24px);
+      padding-right: 15px;
+    }
+
+    &-button {
+      background-color: var(--color-light-green);
+      color: var(--color-white);
+
+      &:active {
+        background-color: var(--color-white);
+        color: var(--color-green);
+      }
+    }
+  }
+
+  &__items-section {
+    padding-left: 16px;
+    border-left: var(--border-gray);
+
+    @include tablet {
+      display: none;
+    }
+
+  }
+
+  &__item {
+    padding-bottom: 20px;
+
+    &:not(:last-child) {
+      border-bottom: var(--border-gray);
+    }
+
+    &-img img {
+      border-radius: 10px;
+    }
+
+    &-title {
+
+      & a {
+        @include flex-center;
+
+        gap: 12px;
+      }
+
+      & svg {
+        display: none;
+      }
+
+      &:hover {
+        color: var(--color-green);
+
+        & svg {
+          display: block;
+        }
+      }
+
+
+    }
+
+    &-body {
+      padding-top: clamp(20px, 5.4vw, 103px);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    &-text {
+      text-transform: uppercase;
+      max-width: 307px;
+      width: 100%;
+    }
+
+    &-text blockquote {
+      margin: 0 0;
+    }
+
+    &-date {
+      max-width: 144px;
+      margin-top: 32px;
+      background-color: var(--color-gray-button);
+      cursor: text;
+    }
+  }
+
+  &__item:nth-child(2) {
+    .learn__item-body {
+      padding-top: clamp(20px, 8.486486vw, 144px);
+      padding-bottom: 0;
+      max-width: 528px;
+      padding-right: 15px;
+    }
+
+    .learn__item-text {
+      padding-bottom: 0;
+      max-width: 423px;
+      width: 100%;
+    }
+  }
+
+  &__item:nth-child(2) {
+    .learn__item-date {
+      margin-top: 16px;
+    }
+  }
+
+  &__button-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  &__item:nth-child(3) {
+    .learn__item-body {
+      padding-top: clamp(20px, 12.135135vw, 225px);
+      padding-right: 15px;
+    }
+
+    button {
+      background-color: var(--color-gray-button);
+
+      &:active {
+        background-color: var(--color-black);
+        color: var(--color-white);
+      }
+    }
+
+  }
+
+  &__title-articles,
+  &__title-terms {
+    padding-top: 20px;
+  }
+}

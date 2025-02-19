@@ -1,0 +1,97 @@
+.footer {
+    max-width: var(--container-width);
+    margin: auto;
+    width: 100%;
+    padding-inline: var(--padding-x);
+    padding-top: clamp(20px, 1.92vw, 35px);
+    padding-bottom: clamp(25px, 2vw, 38px);
+    border-top: var(--border);
+    text-transform: uppercase;
+    margin-top: var(--section-margin-y);
+
+    @include mobile {
+        padding-right: 0px;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: clamp(296px, 60.2vw, 1138px) clamp(200px, 36.2vw, 682px);
+        gap: clamp(20px, 2vw, 60px);
+
+        @include tablet {
+            gap: 0;
+        }
+
+        @media(max-width:600px) {
+            grid-template-columns: auto;
+            background: url(../images/footer-ball-mobile.png) 100% 82% no-repeat;
+        }
+    }
+
+    &__title h3 {
+        width: clamp(296px, 49vw, 960px);
+    }
+
+    &__title-links {
+        padding-top: clamp(20px, 1.92vw, 32px);
+        gap: clamp(24px, 1.92vw, 37px);
+        display: flex;
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    &__extra {
+        padding-top: clamp(165px, 15.99vw, 307px);
+    }
+
+    &__img {
+        padding-top: 29px;
+        background: url(../images/footer-ball-desk.png) bottom/contain no-repeat;
+
+        @media(max-width:600px) {
+            display: none;
+        }
+
+        &-qr-wrapper {
+            @include flex-center;
+            flex-direction: column;
+            padding-top: clamp(10px, 1.92vw, 44px);
+            max-width: 352px;
+            margin-left: 41px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+            & svg {
+                padding-inline: 20px;
+            }
+
+            & p:nth-child(2) {
+                @include fluid-text (16, 14);
+
+                font-family: var(--font-family-subtitle);
+                font-weight: 500;
+                line-height: 1.6;
+                color: var(--color-gray-alt);
+                padding-top: clamp(10px, 1.92vw, 35px);
+            }
+
+            & p:nth-child(3) {
+                @include fluid-text (14, 12);
+
+                font-weight: 700;
+                text-align: center;
+                line-height: 1.4;
+                max-width: 264px;
+                padding-top: 12px;
+                padding-bottom: clamp(20px, 1.92vw, 44px);
+                padding-inline: 20px;
+                
+            }
+
+        }
+
+
+    }
+}

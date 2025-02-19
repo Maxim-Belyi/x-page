@@ -1,0 +1,88 @@
+.header {
+    @include flex-center;
+    @include fluid-text(14, 12);
+    @include height (80, 48);
+    @include margin-top (20, 12);
+
+    padding-inline: var(--padding-x);
+    line-height: 19.6px;
+    text-transform: uppercase;
+    justify-content: space-between;
+
+    &__link {
+        @include flex-center;
+
+        @include tablet {
+            width: 70px;
+            height: 17px;
+        }
+
+        @include mobile {
+            order: 1;
+        }
+    }
+
+    &__nav {
+        margin-right: auto;
+        padding: 21px 0 21px 3.479%;
+        & a:hover {
+            color: var(--color-orange);
+        }
+    }
+
+    &__nav ul {
+        @include flex-center;
+
+        gap: 24px;
+    }
+
+    &__button {
+        @include flex-center;
+
+        width: clamp(110px, 8.63%, 132px);
+        height: 38px; 
+        gap: 8px;
+        padding-right: 8px;
+
+        &:hover {
+            color: var(--color-orange);
+        }
+
+        @include tablet {
+            @include flex-center;
+
+            justify-content: center;
+            width: 64px;
+        }
+
+        @include mobile {
+            order: 0;
+            padding: 0;
+            width: 32px;
+        }
+    }
+
+    &__user-inner {
+        @include flex-center;
+
+        border-radius: var(--border-radius);
+        justify-content: space-between;
+        gap: 10px;
+        background-color: var(--color-gray-button);
+        
+        @include mobile {
+            order: 2;
+        }
+    }
+
+    &__user-name {
+        padding-left: 16px;
+    }
+
+    &__user-img {
+        border-radius: 50%;
+        padding-right: 3px;
+    }
+
+
+}

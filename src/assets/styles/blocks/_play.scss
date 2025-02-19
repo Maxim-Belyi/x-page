@@ -1,0 +1,109 @@
+.play {
+
+    &__title-link {
+        color: var(--color-orange);
+
+        &:hover {
+            color: var(--color-green);
+        }
+    }
+
+    &__body {
+        gap: 9px;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-card {
+            width: clamp(296px, 94vw, 621px);
+
+            & img {
+                border-radius: var(--border-radius);
+            }
+
+            &:nth-child(2) {
+                & img {
+                    position: relative;
+                    padding-left: 25%;
+                }
+            }
+
+            &:nth-child(odd) {
+                & img {
+                    border-radius: var(--border-radius);
+                    clip-path: ellipse(52% 76% at 50% 24%);
+                }
+            }
+
+            &-descr {
+                display: flex;
+                max-width: 490px;
+                flex-direction: column;
+                gap: clamp(8px, 0.64vw, 16px);
+                padding: clamp(28px, 2.9vw, 62px) clamp(12px, 1.12vw, 24px) clamp(12px, 1.12vw, 24px) clamp(12px, 1.12vw, 24px);
+
+                @include mobile {
+                    padding: clamp(28px, 5.9vw, 62px) clamp(12px, 3.12vw, 24px) clamp(12px, 3.12vw, 24px) clamp(12px, 3.12vw, 24px)
+                }
+
+                & p {
+                    font-family: var(--font-family-subtitle);
+                    font-weight: 500;
+
+                    font-size: clamp(14px, 0.757vw, 16px);
+                    line-height: 1.6;
+                }
+
+                & h4 {
+                    max-width: 320px;
+                }
+            }
+
+            &:hover {
+                background-color: var(--color-black);
+                color: var(--color-white);
+
+                .play__body-button {
+                    display: flex;
+
+                    &-inner {
+                        padding-bottom: 24px;
+                        padding-top: 8px;
+                    }
+                }
+            }
+
+        }
+
+        &-button-inner {
+            display: flex;
+            justify-content: center;
+            max-width: 100%;
+            padding: 0 24px;
+
+            @include tablet {
+                padding: 0 12px;
+            }
+        }
+
+        &-button {
+            @include flex-center;
+
+            display: none;
+            background-color: var(--color-orange);
+            color: var(--color-white);
+            height: clamp(40px, 3.3333333333vw, 64px);
+            font-size: clamp(14px, 0.8333333333vw, 16px);
+            justify-content: space-between;
+            line-height: 1.4;
+            padding-left: 24px;
+            width: 100%;
+
+            & svg {
+                margin-right: 24px;
+            }
+        }
+    }
+}
