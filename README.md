@@ -1,4 +1,4 @@
-<br>
+
 <h1><a href="https://maxim-belyi.github.io/x-page/" target="_blank"> "Xpage" </a>
  </a> </h1>
 <br>
