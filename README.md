@@ -1,8 +1,8 @@
 <br>
-<h1 align="center"><a href="https://maxim-belyi.github.io/x-page/" target="_blank"> "Xpage" </a>
+<h1><a href="https://maxim-belyi.github.io/x-page/" target="_blank"> "Xpage" </a>
  </a> </h1>
 <br>
-<p>📝 Пробный проект</p>
+<p>📝 Тестовый проект</p>
 <br>
 Вёрстка лендинга с подключением библиотеки Swiper</a>
 <br>
