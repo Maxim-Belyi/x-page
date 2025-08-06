@@ -1,7 +1,8 @@
 <br>
-<h1 align="center">X-page <a href="https://maxim-belyi.github.io/x-page/" target="_blank"> "Xpage" </a>
-📝 Пробный проект </a> </h1>
+<h1 align="center"><a href="https://maxim-belyi.github.io/x-page/" target="_blank"> "Xpage" </a>
+ </a> </h1>
 <br>
+<p>📝 Пробный проект</p>
 <br>
 Вёрстка лендинга с подключением библиотеки Swiper</a>
 <br>
@@ -9,7 +10,7 @@
 <br>
 <br>
 <p align="center">
-  <img src="images/x-page title.avif" alt="app screenshot" width="800">
+  <img src="src/x-page_title.avif" alt="app screenshot" width="800">
 </p>
 <br>
 ### 🛠️ Стек технологий
